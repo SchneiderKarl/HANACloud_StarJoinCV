@@ -1,0 +1,45 @@
+{
+    "format_version": 1,
+    "imports": [
+      {
+        "target_table": "ORDERS",
+        "source_data": {
+          "data_type": "CSV",
+          "file_name": "Orders.csv",
+          "has_header": true,
+          "type_config": {
+            "delimiter": ","
+          }
+        },
+        "import_settings": {
+          "import_columns": [
+            "O_ID",
+            "O_TIMESTAMP",
+            "O_SHOP_ID",
+            "O_CUSTOMER_ID",
+            "O_EMPLOYEE_ID",
+            "O_PRODUCT_ID",
+            "O_CURRENCY",
+            "O_QUANTITY",
+            "O_TOTAL",
+            "O_DISCOUNT",
+            "O_PAYMENT_METHOD"
+          ],
+          "include_filter": []
+        },
+        "column_mappings": {
+          "O_ID": "ID",
+          "O_TIMESTAMP": "timestamp",
+          "O_SHOP_ID": "shop_ID",
+          "O_CUSTOMER_ID": "customer_ID",
+          "O_EMPLOYEE_ID": "employee_ID",
+          "O_PRODUCT_ID": "product_ID",
+          "O_CURRENCY": "currency",
+          "O_QUANTITY": "quantity",
+          "O_TOTAL": "total",
+          "O_DISCOUNT": "discount",
+          "O_PAYMENT_METHOD": "payment_method"
+        }
+      }
+    ]
+  }

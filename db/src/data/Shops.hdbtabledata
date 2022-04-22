@@ -1,0 +1,43 @@
+{
+    "format_version": 1,
+    "imports": [
+      {
+        "target_table": "SHOPS",
+        "source_data": {
+          "data_type": "CSV",
+          "file_name": "Shops.csv",
+          "has_header": true,
+          "type_config": {
+            "delimiter": ","
+          }
+        },
+        "import_settings": {
+          "import_columns": [
+            "S_ID",
+            "S_NAME",
+            "S_ADDRESS_STREET",
+            "S_ADDRESS_HOUSENUMBER",
+            "S_ADDRESS_CITY",
+            "S_ADDRESS_REGION",
+            "S_ADDRESS_ZIP_CODE",
+            "S_ADDRESS_COUNTRY",
+            "S_LAT",
+            "S_LONG"
+          ],
+          "include_filter": []
+        },
+        "column_mappings": {
+          "S_ID": "ID",
+          "S_NAME": "name",
+          "S_ADDRESS_STREET": "street",
+          "S_ADDRESS_HOUSENUMBER": "housenumber",
+          "S_ADDRESS_CITY": "city",
+          "S_ADDRESS_REGION": "region",
+          "S_ADDRESS_ZIP_CODE": "zip_code",
+          "S_ADDRESS_COUNTRY": "country",
+          "S_LAT": "lat",
+          "S_LONG": "long"
+        }
+      }
+    ]
+  }

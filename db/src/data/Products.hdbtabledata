@@ -1,0 +1,35 @@
+{
+    "format_version": 1,
+    "imports": [
+      {
+        "target_table": "PRODUCTS",
+        "source_data": {
+          "data_type": "CSV",
+          "file_name": "Products.csv",
+          "has_header": true,
+          "type_config": {
+            "delimiter": ","
+          }
+        },
+        "import_settings": {
+          "import_columns": [
+            "P_ID",
+            "P_CATEGORY",
+            "P_NAME",
+            "P_PURCHASE_PRICE",
+            "P_SELLING_PRICE",
+            "P_UNITS_IN_STOCK"
+          ],
+          "include_filter": []
+        },
+        "column_mappings": {
+          "P_ID": "ID",
+          "P_CATEGORY": "category",
+          "P_NAME": "name",
+          "P_PURCHASE_PRICE": "purchase_price",
+          "P_SELLING_PRICE": "selling_price",
+          "P_UNITS_IN_STOCK": "units_in_stock"
+        }
+      }
+    ]
+  }

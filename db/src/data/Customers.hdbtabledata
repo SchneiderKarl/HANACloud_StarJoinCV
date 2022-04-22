@@ -1,0 +1,53 @@
+{
+    "format_version": 1,
+    "imports": [
+      {
+        "target_table": "CUSTOMERS",
+        "source_data": {
+          "data_type": "CSV",
+          "file_name": "Customers.csv",
+          "has_header": true,
+          "type_config": {
+            "delimiter": ","
+          }
+        },
+        "import_settings": {
+          "import_columns": [
+            "C_ID",
+            "C_NAME",
+            "C_SEX",
+            "C_BIRTHDAY",
+            "C_CUSTOMER_SINCE",
+            "C_EMAIL",
+            "C_PHONE",
+            "C_LOYALTY_POINTS",
+            "C_IBAN",
+            "C_ADDRESS_STREET",
+            "C_ADDRESS_HOUSENUMBER",
+            "C_ADDRESS_CITY",
+            "C_ADDRESS_REGION",
+            "C_ADDRESS_ZIP_CODE",
+            "C_ADDRESS_COUNTRY"
+          ],
+          "include_filter": []
+        },
+        "column_mappings": {
+          "C_ID": "ID",
+          "C_NAME": "name",
+          "C_SEX": "sex",
+          "C_BIRTHDAY": "birthday",
+          "C_CUSTOMER_SINCE": "customer_since",
+          "C_EMAIL": "email",
+          "C_PHONE": "phone",
+          "C_LOYALTY_POINTS": "loyalty_points",
+          "C_IBAN": "IBAN",
+          "C_ADDRESS_STREET": "street",
+          "C_ADDRESS_HOUSENUMBER": "housenumber",
+          "C_ADDRESS_CITY": "city",
+          "C_ADDRESS_REGION": "region",
+          "C_ADDRESS_ZIP_CODE": "zip_code",
+          "C_ADDRESS_COUNTRY": "country"
+        }
+      }
+    ]
+  }

@@ -1,0 +1,9 @@
+ID,category,name,purchase_price,selling_price,units_in_stock
+9d7f0ff5-a3f3-477e-bfa8-1f1253028bc0,Beer,Astra Rakete,3,7,3
+d8aed834-97bd-47bd-ad07-68eb87593d6a,Beer,Bitburger Pils,3,5,0
+23727e34-5839-400b-8207-580266ba3a67,Beer,Tegernseer Hell,1,9,5
+8bb6194d-7ce1-41a3-8c0a-9d0adfeeab34,Wine,Chardonnay,6,7,1
+5bf0aca3-645d-42b4-af6d-7fd0478498dd,Wine,Riesling,5,2,2
+2985bed3-bb86-4b91-bfcf-c0f943015ec5,Wine,Rioja,0,6,4
+fa21e18d-ab54-45b2-bea1-717ae3a8de36,non alcoholic beverages,Sparkling Water,5,9,5
+e85b8546-c6b0-425f-b79d-024899fb716d,non alcoholic beverages,Green Tea,2,6,0

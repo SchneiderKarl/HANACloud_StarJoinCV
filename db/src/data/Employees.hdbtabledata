@@ -1,0 +1,53 @@
+{
+    "format_version": 1,
+    "imports": [
+      {
+        "target_table": "EMPLOYEES",
+        "source_data": {
+          "data_type": "CSV",
+          "file_name": "Employees.csv",
+          "has_header": true,
+          "type_config": {
+            "delimiter": ","
+          }
+        },
+        "import_settings": {
+          "import_columns": [
+            "E_ID",
+            "E_NAME",
+            "E_SEX",
+            "E_BIRTHDAY",
+            "E_EMPLOYEE_SINCE",
+            "E_EMAIL",
+            "E_PHONE",
+            "E_IBAN",
+            "E_ADDRESS_STREET",
+            "E_ADDRESS_HOUSENUMBER",
+            "E_ADDRESS_CITY",
+            "E_ADDRESS_REGION",
+            "E_ADDRESS_ZIP_CODE",
+            "E_ADDRESS_COUNTRY",
+            "E_SHOP_ID"
+          ],
+          "include_filter": []
+        },
+        "column_mappings": {
+          "E_ID": "ID",
+          "E_NAME": "name",
+          "E_SEX": "sex",
+          "E_BIRTHDAY": "birthday",
+          "E_EMPLOYEE_SINCE": "employee_since",
+          "E_EMAIL": "email",
+          "E_PHONE": "phone",
+          "E_IBAN": "IBAN",
+          "E_ADDRESS_STREET": "street",
+          "E_ADDRESS_HOUSENUMBER": "housenumber",
+          "E_ADDRESS_CITY": "city",
+          "E_ADDRESS_REGION": "region",
+          "E_ADDRESS_ZIP_CODE": "zip_code",
+          "E_ADDRESS_COUNTRY": "country",
+          "E_SHOP_ID": "shop_ID"
+        }
+      }
+    ]
+  }

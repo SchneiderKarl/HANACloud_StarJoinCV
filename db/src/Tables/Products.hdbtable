@@ -1,0 +1,9 @@
+COLUMN TABLE Products (
+  P_ID NVARCHAR(36) NOT NULL,
+  P_name NVARCHAR(5000),
+  P_category NVARCHAR(5000),
+  P_purchase_price DOUBLE,
+  P_selling_price DOUBLE,
+  P_units_in_stock INTEGER,
+  PRIMARY KEY(P_ID)
+)

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Calculation:scenario xmlns:Calculation="http://www.sap.com/ndb/BiModelCalculation.ecore" id="Shops" applyPrivilegeType="NONE" dataCategory="DIMENSION" dimensionType="STANDARD" schemaVersion="3.0" outputViewType="Projection" cacheInvalidationPeriod="NONE" enforceSqlExecution="false">
+<descriptions defaultDescription="Shops.hdbcalculationview"/>
+<localVariables/>
+<variableMappings/>
+<dataSources>
+  <DataSource id="SHOPS">
+    <resourceUri>SHOPS</resourceUri>
+  </DataSource>
+</dataSources>
+<calculationViews/>
+<logicalModel id="SHOPS">
+  <attributes>
+    <attribute id="S_ID" order="1" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="S_ID"/>
+      <keyMapping columnObjectName="SHOPS" columnName="S_ID"/>
+    </attribute>
+    <attribute id="S_NAME" order="2" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="S_NAME"/>
+      <keyMapping columnObjectName="SHOPS" columnName="S_NAME"/>
+    </attribute>
+    <attribute id="S_ADDRESS_STREET" order="3" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="S_ADDRESS_STREET"/>
+      <keyMapping columnObjectName="SHOPS" columnName="S_ADDRESS_STREET"/>
+    </attribute>
+    <attribute id="S_ADDRESS_HOUSENUMBER" order="4" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="S_ADDRESS_HOUSENUMBER"/>
+      <keyMapping columnObjectName="SHOPS" columnName="S_ADDRESS_HOUSENUMBER"/>
+    </attribute>
+    <attribute id="S_ADDRESS_CITY" order="5" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="S_ADDRESS_CITY"/>
+      <keyMapping columnObjectName="SHOPS" columnName="S_ADDRESS_CITY"/>
+    </attribute>
+    <attribute id="S_ADDRESS_ZIP_CODE" order="6" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="S_ADDRESS_ZIP_CODE"/>
+      <keyMapping columnObjectName="SHOPS" columnName="S_ADDRESS_ZIP_CODE"/>
+    </attribute>
+    <attribute id="S_ADDRESS_REGION" order="7" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="S_ADDRESS_REGION"/>
+      <keyMapping columnObjectName="SHOPS" columnName="S_ADDRESS_REGION"/>
+    </attribute>
+    <attribute id="S_ADDRESS_COUNTRY" order="8" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="S_ADDRESS_COUNTRY"/>
+      <keyMapping columnObjectName="SHOPS" columnName="S_ADDRESS_COUNTRY"/>
+    </attribute>
+    <attribute id="S_LAT" order="9" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="S_LAT"/>
+      <keyMapping columnObjectName="SHOPS" columnName="S_LAT"/>
+    </attribute>
+    <attribute id="S_LONG" order="10" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="S_LONG"/>
+      <keyMapping columnObjectName="SHOPS" columnName="S_LONG"/>
+    </attribute>
+  </attributes>
+  <calculatedAttributes>
+    <calculatedAttribute id="S_LOCATION" order="11" semanticType="empty" displayAttribute="false" attributeHierarchyActive="false">
+      <keyCalculation datatype="ST_POINT" expressionLanguage="SQL">
+        <formula>ST_Transform(ST_GeomFromText('POINT(' || &quot;S_LONG&quot; || ' ' || &quot;S_LAT&quot; || ')', 4326),3857)</formula>
+      </keyCalculation>
+    </calculatedAttribute>
+  </calculatedAttributes>
+  <baseMeasures/>
+  <calculatedMeasures/>
+  <restrictedMeasures/>
+</logicalModel>
+<layout>
+  <shapes>
+    <shape expanded="true" modelObjectName="Output" modelObjectNameSpace="MeasureGroup">
+      <upperLeftCorner x="40" y="85"/>
+    </shape>
+  </shapes>
+</layout>
+</Calculation:scenario>

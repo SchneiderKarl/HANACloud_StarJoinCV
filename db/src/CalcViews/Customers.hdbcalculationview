@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Calculation:scenario xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Calculation="http://www.sap.com/ndb/BiModelCalculation.ecore" xmlns:Dimension="http://www.sap.com/ndb/BiModelDimension.ecore" id="Customers" applyPrivilegeType="NONE" dataCategory="DIMENSION" dimensionType="STANDARD" schemaVersion="3.0" outputViewType="Projection" cacheInvalidationPeriod="NONE" enforceSqlExecution="false">
+<descriptions defaultDescription="Customers.hdbcalculationview"/>
+<localVariables/>
+<variableMappings/>
+<dataSources>
+  <DataSource id="CUSTOMERS">
+    <resourceUri>CUSTOMERS</resourceUri>
+  </DataSource>
+</dataSources>
+<calculationViews/>
+<inlineHierarchy xsi:type="Dimension:LeveledHierarchy" id="C_Geo_Hier" aggregateAllNodes="true" orphanedNodesHandling="ROOT_NODES" rootNodeVisibility="ADD_ROOT_NODE" withRootNode="true" nodeStyle="NAME_PATH_ENFORCED" cacheEnabled="true" cycleHandling="BREAKUP" emptyValueIsNull="true">
+  <descriptions defaultDescription="C_Geo_Hier"/>
+  <unassignedMemberProperties mode="FALSE"/>
+  <levels>
+    <level levelAttribute="C_ADDRESS_COUNTRY" levelType="MDLEVEL_TYPE_REGULAR" order="1" orderAttribute="C_ADDRESS_COUNTRY" sortDirection="ASC"/>
+    <level levelAttribute="C_ADDRESS_REGION" levelType="MDLEVEL_TYPE_REGULAR" order="2" orderAttribute="C_ADDRESS_REGION" sortDirection="ASC"/>
+    <level levelAttribute="C_ADDRESS_CITY" levelType="MDLEVEL_TYPE_REGULAR" order="3" orderAttribute="C_ADDRESS_CITY" sortDirection="ASC"/>
+  </levels>
+</inlineHierarchy>
+<logicalModel id="CUSTOMERS">
+  <attributes>
+    <attribute id="C_ID" order="1" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="C_ID"/>
+      <keyMapping columnObjectName="CUSTOMERS" columnName="C_ID"/>
+    </attribute>
+    <attribute id="C_NAME" order="2" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="C_NAME"/>
+      <keyMapping columnObjectName="CUSTOMERS" columnName="C_NAME"/>
+    </attribute>
+    <attribute id="C_SEX" order="3" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="C_SEX"/>
+      <keyMapping columnObjectName="CUSTOMERS" columnName="C_SEX"/>
+    </attribute>
+    <attribute id="C_BIRTHDAY" order="4" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="C_BIRTHDAY"/>
+      <keyMapping columnObjectName="CUSTOMERS" columnName="C_BIRTHDAY"/>
+    </attribute>
+    <attribute id="C_ADDRESS_STREET" order="5" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="C_ADDRESS_STREET"/>
+      <keyMapping columnObjectName="CUSTOMERS" columnName="C_ADDRESS_STREET"/>
+    </attribute>
+    <attribute id="C_ADDRESS_HOUSENUMBER" order="6" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="C_ADDRESS_HOUSENUMBER"/>
+      <keyMapping columnObjectName="CUSTOMERS" columnName="C_ADDRESS_HOUSENUMBER"/>
+    </attribute>
+    <attribute id="C_ADDRESS_CITY" order="7" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="C_ADDRESS_CITY"/>
+      <keyMapping columnObjectName="CUSTOMERS" columnName="C_ADDRESS_CITY"/>
+    </attribute>
+    <attribute id="C_ADDRESS_ZIP_CODE" order="8" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="C_ADDRESS_ZIP_CODE"/>
+      <keyMapping columnObjectName="CUSTOMERS" columnName="C_ADDRESS_ZIP_CODE"/>
+    </attribute>
+    <attribute id="C_ADDRESS_REGION" order="9" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="C_ADDRESS_REGION"/>
+      <keyMapping columnObjectName="CUSTOMERS" columnName="C_ADDRESS_REGION"/>
+    </attribute>
+    <attribute id="C_ADDRESS_COUNTRY" order="10" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="C_ADDRESS_COUNTRY"/>
+      <keyMapping columnObjectName="CUSTOMERS" columnName="C_ADDRESS_COUNTRY"/>
+    </attribute>
+    <attribute id="C_CUSTOMER_SINCE" order="11" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="C_CUSTOMER_SINCE"/>
+      <keyMapping columnObjectName="CUSTOMERS" columnName="C_CUSTOMER_SINCE"/>
+    </attribute>
+    <attribute id="C_EMAIL" order="12" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="C_EMAIL"/>
+      <keyMapping columnObjectName="CUSTOMERS" columnName="C_EMAIL"/>
+    </attribute>
+    <attribute id="C_PHONE" order="13" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="C_PHONE"/>
+      <keyMapping columnObjectName="CUSTOMERS" columnName="C_PHONE"/>
+    </attribute>
+    <attribute id="C_LOYALTY_POINTS" order="14" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="C_LOYALTY_POINTS"/>
+      <keyMapping columnObjectName="CUSTOMERS" columnName="C_LOYALTY_POINTS"/>
+    </attribute>
+    <attribute id="C_IBAN" order="15" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="C_IBAN"/>
+      <keyMapping columnObjectName="CUSTOMERS" columnName="C_IBAN"/>
+    </attribute>
+  </attributes>
+  <calculatedAttributes/>
+  <baseMeasures/>
+  <calculatedMeasures/>
+  <restrictedMeasures/>
+</logicalModel>
+<layout>
+  <shapes>
+    <shape expanded="true" modelObjectName="Output" modelObjectNameSpace="MeasureGroup">
+      <upperLeftCorner x="40" y="85"/>
+    </shape>
+  </shapes>
+</layout>
+</Calculation:scenario>

@@ -1,0 +1,18 @@
+COLUMN TABLE Customers (
+  C_ID NVARCHAR(36) NOT NULL,
+  C_name NVARCHAR(5000),
+  C_sex NVARCHAR(1),
+  C_birthday DATE,
+  C_address_street NVARCHAR(5000),
+  C_address_housenumber NVARCHAR(5000),
+  C_address_city NVARCHAR(5000),
+  C_address_zip_code INTEGER,
+  C_address_region NVARCHAR(5000),
+  C_address_country NVARCHAR(5000),
+  C_customer_since DATE,
+  C_email NVARCHAR(5000),
+  C_phone NVARCHAR(5000),
+  C_loyalty_points INTEGER,
+  C_IBAN NVARCHAR(5000),
+  PRIMARY KEY(C_ID)
+)

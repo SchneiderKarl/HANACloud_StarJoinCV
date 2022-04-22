@@ -1,0 +1,14 @@
+COLUMN TABLE Orders (
+  O_ID NVARCHAR(36) NOT NULL,
+  O_timestamp TIMESTAMP,
+  O_shop_ID NVARCHAR(36),
+  O_customer_ID NVARCHAR(36),
+  O_employee_ID NVARCHAR(36),
+  O_product_ID NVARCHAR(36),
+  O_currency NVARCHAR(1) DEFAULT '€',
+  O_quantity INTEGER,
+  O_total DOUBLE,
+  O_discount DOUBLE,
+  O_payment_method NVARCHAR(5000),
+  PRIMARY KEY(O_ID)
+)

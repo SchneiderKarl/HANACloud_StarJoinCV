@@ -1,0 +1,18 @@
+COLUMN TABLE Employees (
+  E_ID NVARCHAR(36) NOT NULL,
+  E_name NVARCHAR(5000),
+  E_sex NVARCHAR(1),
+  E_birthday DATE,
+  E_address_street NVARCHAR(5000),
+  E_address_housenumber NVARCHAR(5000),
+  E_address_city NVARCHAR(5000),
+  E_address_zip_code INTEGER,
+  E_address_region NVARCHAR(5000),
+  E_address_country NVARCHAR(5000),
+  E_employee_since DATE,
+  E_email NVARCHAR(5000),
+  E_phone NVARCHAR(5000),
+  E_IBAN NVARCHAR(5000),
+  E_shop_ID NVARCHAR(36),
+  PRIMARY KEY(E_ID)
+)

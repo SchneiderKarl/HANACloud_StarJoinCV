@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Calculation:scenario xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Calculation="http://www.sap.com/ndb/BiModelCalculation.ecore" xmlns:Dimension="http://www.sap.com/ndb/BiModelDimension.ecore" id="Products" applyPrivilegeType="NONE" dataCategory="DIMENSION" dimensionType="STANDARD" schemaVersion="3.0" outputViewType="Projection" cacheInvalidationPeriod="NONE" enforceSqlExecution="false">
+<descriptions defaultDescription="Products.hdbcalculationview"/>
+<localVariables/>
+<variableMappings/>
+<dataSources>
+  <DataSource id="PRODUCTS">
+    <resourceUri>PRODUCTS</resourceUri>
+  </DataSource>
+</dataSources>
+<calculationViews/>
+<inlineHierarchy xsi:type="Dimension:LeveledHierarchy" id="P_Category_Hier" aggregateAllNodes="true" orphanedNodesHandling="ROOT_NODES" rootNodeVisibility="ADD_ROOT_NODE" withRootNode="true" nodeStyle="NAME_PATH_ENFORCED" cacheEnabled="true" cycleHandling="BREAKUP" emptyValueIsNull="true">
+  <descriptions defaultDescription="P_Category_Hier"/>
+  <unassignedMemberProperties mode="FALSE"/>
+  <levels>
+    <level levelAttribute="P_CATEGORY" levelType="MDLEVEL_TYPE_REGULAR" order="1" orderAttribute="P_CATEGORY" sortDirection="ASC"/>
+    <level levelAttribute="P_NAME" levelType="MDLEVEL_TYPE_REGULAR" order="2" orderAttribute="P_NAME" sortDirection="ASC"/>
+  </levels>
+</inlineHierarchy>
+<logicalModel id="PRODUCTS">
+  <attributes>
+    <attribute id="P_ID" order="1" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="P_ID"/>
+      <keyMapping columnObjectName="PRODUCTS" columnName="P_ID"/>
+    </attribute>
+    <attribute id="P_NAME" order="2" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="P_NAME"/>
+      <keyMapping columnObjectName="PRODUCTS" columnName="P_NAME"/>
+    </attribute>
+    <attribute id="P_CATEGORY" order="3" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="P_CATEGORY"/>
+      <keyMapping columnObjectName="PRODUCTS" columnName="P_CATEGORY"/>
+    </attribute>
+    <attribute id="P_PURCHASE_PRICE" order="4" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="P_PURCHASE_PRICE"/>
+      <keyMapping columnObjectName="PRODUCTS" columnName="P_PURCHASE_PRICE"/>
+    </attribute>
+    <attribute id="P_SELLING_PRICE" order="5" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="P_SELLING_PRICE"/>
+      <keyMapping columnObjectName="PRODUCTS" columnName="P_SELLING_PRICE"/>
+    </attribute>
+    <attribute id="P_UNITS_IN_STOCK" order="6" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="P_UNITS_IN_STOCK"/>
+      <keyMapping columnObjectName="PRODUCTS" columnName="P_UNITS_IN_STOCK"/>
+    </attribute>
+  </attributes>
+  <calculatedAttributes/>
+  <baseMeasures/>
+  <calculatedMeasures/>
+  <restrictedMeasures/>
+</logicalModel>
+<layout>
+  <shapes>
+    <shape expanded="true" modelObjectName="Output" modelObjectNameSpace="MeasureGroup">
+      <upperLeftCorner x="40" y="85"/>
+    </shape>
+  </shapes>
+</layout>
+</Calculation:scenario>

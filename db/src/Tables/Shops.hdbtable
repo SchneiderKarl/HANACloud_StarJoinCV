@@ -1,0 +1,13 @@
+COLUMN TABLE Shops (
+  S_ID NVARCHAR(36) NOT NULL,
+  S_name NVARCHAR(5000),
+  S_address_street NVARCHAR(5000),
+  S_address_housenumber NVARCHAR(5000),
+  S_address_city NVARCHAR(5000),
+  S_address_zip_code INTEGER,
+  S_address_region NVARCHAR(5000),
+  S_address_country NVARCHAR(5000),
+  S_lat NVARCHAR(5000),
+  S_long NVARCHAR(5000),
+  PRIMARY KEY(S_ID)
+)

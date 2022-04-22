@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Calculation:scenario xmlns:Calculation="http://www.sap.com/ndb/BiModelCalculation.ecore" id="Employees" applyPrivilegeType="NONE" dataCategory="DIMENSION" dimensionType="STANDARD" schemaVersion="3.0" outputViewType="Projection" cacheInvalidationPeriod="NONE" enforceSqlExecution="false">
+<descriptions defaultDescription="Employees.hdbcalculationview"/>
+<localVariables/>
+<variableMappings/>
+<dataSources>
+  <DataSource id="EMPLOYEES">
+    <resourceUri>EMPLOYEES</resourceUri>
+  </DataSource>
+</dataSources>
+<calculationViews/>
+<logicalModel id="EMPLOYEES">
+  <attributes>
+    <attribute id="E_ID" order="1" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="E_ID"/>
+      <keyMapping columnObjectName="EMPLOYEES" columnName="E_ID"/>
+    </attribute>
+    <attribute id="E_NAME" order="2" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="E_NAME"/>
+      <keyMapping columnObjectName="EMPLOYEES" columnName="E_NAME"/>
+    </attribute>
+    <attribute id="E_SEX" order="3" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="E_SEX"/>
+      <keyMapping columnObjectName="EMPLOYEES" columnName="E_SEX"/>
+    </attribute>
+    <attribute id="E_BIRTHDAY" order="4" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="E_BIRTHDAY"/>
+      <keyMapping columnObjectName="EMPLOYEES" columnName="E_BIRTHDAY"/>
+    </attribute>
+    <attribute id="E_ADDRESS_STREET" order="5" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="E_ADDRESS_STREET"/>
+      <keyMapping columnObjectName="EMPLOYEES" columnName="E_ADDRESS_STREET"/>
+    </attribute>
+    <attribute id="E_ADDRESS_HOUSENUMBER" order="6" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="E_ADDRESS_HOUSENUMBER"/>
+      <keyMapping columnObjectName="EMPLOYEES" columnName="E_ADDRESS_HOUSENUMBER"/>
+    </attribute>
+    <attribute id="E_ADDRESS_CITY" order="7" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="E_ADDRESS_CITY"/>
+      <keyMapping columnObjectName="EMPLOYEES" columnName="E_ADDRESS_CITY"/>
+    </attribute>
+    <attribute id="E_ADDRESS_ZIP_CODE" order="8" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="E_ADDRESS_ZIP_CODE"/>
+      <keyMapping columnObjectName="EMPLOYEES" columnName="E_ADDRESS_ZIP_CODE"/>
+    </attribute>
+    <attribute id="E_ADDRESS_REGION" order="9" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="E_ADDRESS_REGION"/>
+      <keyMapping columnObjectName="EMPLOYEES" columnName="E_ADDRESS_REGION"/>
+    </attribute>
+    <attribute id="E_ADDRESS_COUNTRY" order="10" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="E_ADDRESS_COUNTRY"/>
+      <keyMapping columnObjectName="EMPLOYEES" columnName="E_ADDRESS_COUNTRY"/>
+    </attribute>
+    <attribute id="E_EMPLOYEE_SINCE" order="11" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="E_EMPLOYEE_SINCE"/>
+      <keyMapping columnObjectName="EMPLOYEES" columnName="E_EMPLOYEE_SINCE"/>
+    </attribute>
+    <attribute id="E_EMAIL" order="12" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="E_EMAIL"/>
+      <keyMapping columnObjectName="EMPLOYEES" columnName="E_EMAIL"/>
+    </attribute>
+    <attribute id="E_PHONE" order="13" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="E_PHONE"/>
+      <keyMapping columnObjectName="EMPLOYEES" columnName="E_PHONE"/>
+    </attribute>
+    <attribute id="E_IBAN" order="14" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="E_IBAN"/>
+      <keyMapping columnObjectName="EMPLOYEES" columnName="E_IBAN"/>
+    </attribute>
+    <attribute id="E_SHOP_ID" order="15" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="E_SHOP_ID"/>
+      <keyMapping columnObjectName="EMPLOYEES" columnName="E_SHOP_ID"/>
+    </attribute>
+  </attributes>
+  <calculatedAttributes/>
+  <baseMeasures/>
+  <calculatedMeasures/>
+  <restrictedMeasures/>
+</logicalModel>
+<layout>
+  <shapes>
+    <shape expanded="true" modelObjectName="Output" modelObjectNameSpace="MeasureGroup">
+      <upperLeftCorner x="40" y="85"/>
+    </shape>
+  </shapes>
+</layout>
+</Calculation:scenario>
